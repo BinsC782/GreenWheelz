@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenWheelz</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="GreenWheelz Logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="active">HOME</a></li>
+        <li><a href="compare.html">COMPARE</a></li>
+        <li><a href="guide.html">GUIDE</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>Where Energy<br>Meets Motion</h1>
+
+      <p>
+        Transport is a big source of carbon emissions.
+        By choosing hybrid and electric vehicles, we cut
+        pollution, save money, and drive the world
+        closer to clean energy goals.
+      </p>
+    </div>
+
+    <!-- Cars Image -->
+    <div class="cars">
+      <img src="car1.png" alt="Cars">
+    </div>
+
+  </section>
+
+</body>
+</html>
+
+<style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-image:url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVBAR */
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: #7fd6c7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+.logo{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 280px;
+    display: block;
+}
+
+/* NAVIGATION */
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 55px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #0d2a4d;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+}
+
+.nav-links li a.active{
+    border-bottom: 3px solid #0d2a4d;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.nav-links li a:hover{
+    color: white;
+}
+
+.nav-links li a:focus{
+    outline: none;
+    font-weight: 600;
+}
+
+.nav-links li a:visited{
+    color: #0d2a4d;
+    font-weight: 600;
+}
+
+/* HERO SECTION */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url('background.jpg') center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+/* Blur overlay */
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(2px);
+    top: 0;
+    left: 0;
+}
+
+/* TEXT CONTENT */
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    margin-top: 50px;
+}
+
+.hero-content h1{
+    color: white;
+    font-size: 72px;
+    line-height: 1.1;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+.hero-content p{
+    color: white;
+    font-size: 17px;
+    line-height: 1.7;
+    width: 500px;
+}
+
+/* CARS */
+
+.cars{
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
+    z-index: 2;
+}
+
+.cars img{
+    width: 950px;
+}
+
+</style>

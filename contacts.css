@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navy-deep: #08264b;
+  --navy-mid: #0d2a4d;
+  --navy-dark: #0b2345;
+  --teal: #7fd6c7;
+  --teal-light: #a8e6db;
+  --white: #ffffff;
+  --off-white: #f7f9fc;
+  --gray-light: #f1f5f9;
+  --gray-mid: #e2e8f0;
+  --gray-text: #475569;
+  --gray-dark: #334155;
+  --shadow-md: 0 6px 18px rgba(8, 38, 75, 0.12);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --transition: all 0.25s ease;
+}
+
+body {
+  background: var(--off-white);
+  color: var(--gray-dark);
+  font-family: 'Poppins', sans-serif;
+  padding: 80px 0 0;
+  overflow-x: hidden;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h1 {
+  color: var(--navy-deep);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.contact-section h1::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--teal);
+  margin: 12px auto 32px;
+  border-radius: 2px;
+}
+
+/* 3-COLUMN GRID */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+@media (max-width: 860px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+  }
+}
+
+/* BOX */
+.contact-box {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.contact-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(8, 38, 75, 0.15);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: var(--navy-dark);
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle i {
+  color: var(--teal);
+  font-size: 22px;
+}
+
+.contact-box h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--navy-deep);
+}
+
+.contact-box p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--gray-text);
+}
+
+.contact-box a {
+  color: var(--navy-deep);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-box a:hover {
+  color: var(--navy-mid);
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--navy-dark);
+  color: var(--teal);
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  background: var(--teal);
+  color: var(--navy-dark);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 60px 20px 48px;
+  }
+
+  .contact-container {
+    padding: 32px 24px;
+    gap: 20px;
+  }
+
+  .contact-box {
+    padding: 28px 20px;
+  }
+
+  .contact-box h2 {
+    font-size: 20px;
+  }
+
+  .contact-box p {
+    font-size: 14px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    width: 96%;
+    padding: 24px 16px;
+  }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--navy-mid);
+  color: white;
+  padding: 40px 8%;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-columns div {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-columns h4 {
+  margin-bottom: 10px;
+  color: var(--teal);
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns li {
+  margin: 5px 0;
+}
+
+.footer-columns a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.footer-columns a:hover {
+  color: white;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* CUSTOM SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--off-white);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--teal);
+  border-radius: 4px;
+  border: 2px solid var(--off-white);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--navy-mid);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenWheelz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="contacts.css">
+ 
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" alt="GreenWheelz Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="compare.html">COMPARE</a></li>
+        <li><a href="guide.html">GUIDE</a></li>
+        <li><a href="contacts.html" class="active">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+
+    <div class="contact-container">
+
+      <!-- ABOUT -->
+      <div class="contact-box">
+        <div class="icon-circle">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <h2>About Us</h2>
+        <p>
+          We promote clean energy by encouraging eco-friendly
+          alternatives such as electric and hybrid vehicles,
+          driving communities toward a sustainable future.
+        </p>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="contact-box">
+        <div class="icon-circle">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <h2>E-mail</h2>
+        <p><a href="mailto:greenWheelz@gmail.com">greenWheelz@gmail.com</a></p>
+      </div>
+
+      <!-- PHONE -->
+      <div class="contact-box">
+        <div class="icon-circle">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <h2>Phone/Landline</h2>
+        <p><a href="tel:+631234567890">+63 123 456 7890</a></p>
+        <p><a href="tel:+639876543210">+63 987 654 3210</a></p>
+      </div>
+
+    </div>
+    <!-- SOCIAL -->
+    <div class="contact-box">
+      <div class="icon-circle"><i class="fa-solid fa-share-nodes"></i></div>
+      <h2>Follow Us</h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/greenwheelzmnl" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/greenwheelzmnl" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@greenwheelzmnl" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://github.com/greenwheelzmnl" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Simple FAQ toggle
+    const questions = document.querySelectorAll(".faq-question");
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        q.classList.toggle("active");
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h4>Our Mission</h4>
+        <p>Advancing SDG 7 by making clean transport accessible to all.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="compare.html">Compare</a></li>
+          <li><a href="guide.html">Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect with Us</h4>
+        <p>Email: <a href="mailto:greenwheelzmnl@gmail.com">greenwheelzmnl@gmail.com</a></p>
+        <p>Phone: <a href="tel:+639123456789">+63 912 345 6789</a></p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 GreenWheelz. Driving SDG 7 Forward.</p>
+  </footer>
+</body>
+</html>
