@@ -173,20 +173,20 @@ document.querySelectorAll('.compare-btn').forEach(btn => {
 });
 
 /* =========================
-   OPEN MODAL ✅ FULL FIX
+   OPEN MODAL FULL FIX
 ========================= */
 function openModal() {
   const [c1, c2] = compareQueue;
   if (!c1 || !c2) return;
 
-  // ✅ FIX: SHOW NAMES
+  // FIX: SHOW NAMES
   document.getElementById('car1Label').textContent = c1.name;
   document.getElementById('car2Label').textContent = c2.name;
 
   document.getElementById('compareImg1').src = c1.image;
   document.getElementById('compareImg2').src = c2.image;
 
-  // ✅ SHOW ALL DATA
+  // SHOW ALL DATA
   document.getElementById('range1').textContent = c1.range;
   document.getElementById('range2').textContent = c2.range;
 
@@ -230,7 +230,7 @@ document.getElementById('em2').textContent = c2.emissions;
 document.getElementById('co21').textContent = c1.co2;
 document.getElementById('co22').textContent = c2.co2;
 
-  // ✅ FIXED WINNER LOGIC
+  // FIXED WINNER LOGIC
   const r1 = getNum(c1.range);
   const r2 = getNum(c2.range);
 
