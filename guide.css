@@ -16,9 +16,9 @@ body {
 /* MAIN CONTAINER */
 .main-container {
   display: flex;
-  margin-top: 70px; /* space below navbar */
+  margin-top: 70px; 
   min-height: calc(100vh - 70px);
-  gap: 20px; /* breathing space between sidebar and map */
+  gap: 20px; 
   padding: 20px;
 }
 
