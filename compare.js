@@ -9,7 +9,7 @@ cars.forEach(car => {
 });
 
 /* =========================
-   UPDATE INFO CARD
+    INFO CARD
 ========================= */
 function updateInfo(car) {
   if (!car) return;
