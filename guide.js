@@ -121,7 +121,7 @@ let markers = [];
 // RENDER MARKERS
 function renderMarkers(filter){
 
-    // REMOVE OLD MARKERS
+
     markers.forEach(marker=>{
         map.removeLayer(marker);
     });
