@@ -173,7 +173,7 @@ document.querySelectorAll('.compare-btn').forEach(btn => {
 });
 
 /* =========================
-   OPEN MODAL FULL FIX
+   OPEN MODAL 
 ========================= */
 function openModal() {
   const [c1, c2] = compareQueue;
