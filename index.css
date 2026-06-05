@@ -152,7 +152,7 @@ body {
   box-shadow: 0 10px 24px rgba(0,0,0,0.12);
 }
 
-/* Icon Container styled for <img> */
+
 .highlight-icon {
   width: 90px;
   height: 90px;
@@ -177,7 +177,7 @@ body {
 }
 
 .highlight:hover .highlight-icon img {
-  filter: brightness(0) invert(1); /* makes icon white on hover */
+  filter: brightness(0) invert(1);
 }
 
 /* Text Styling */
@@ -260,7 +260,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: #0d2a4d;
 }
 
-/* RESPONSIVE DESIGN */
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
