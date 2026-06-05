@@ -36,9 +36,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ─────────────────────────────────────
-    BODY
-──────────────────────────────────── */
+
 .page-header {
   text-align: center;
   padding: 5.5rem 2rem 1.75rem;
@@ -406,7 +404,7 @@ body {
   text-align: center;
 }
 
-/* Comparison images */
+
 .compare-car-card img,
 .compare-images img {
   width: 100%;
@@ -623,7 +621,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-/* mobile fix */
+/* mobile */
 @media (max-width: 600px) {
   
 
