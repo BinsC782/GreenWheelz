@@ -256,12 +256,12 @@ body {
 }
 
 .nav-btn.left {
-  left: 18%;                /* closer to the carousel */
+  left: 18%;                
 }
 
 /* Right button */
 .nav-btn.right {
-  right: 18%;               /* closer to the carousel */
+  right: 18%;               
 }
 
 .nav-btn:hover {
@@ -272,7 +272,7 @@ body {
 /* INFO CARD */
 .info-card {
   width: 90%;
-  max-width: 900px;  /* bigger container */
+  max-width: 900px;  
   margin: 2rem auto;
   background: #ffffff;
   border: 1.5px solid rgba(127,214,199,0.45);
@@ -322,7 +322,7 @@ body {
   backdrop-filter: blur(8px);
   align-items: center;
   justify-content: center;
-  padding-top: 80px;   /* ✅ pushes content down below nav header */
+  padding-top: 80px;   
 }
 
 .compare-modal.open {
@@ -335,12 +335,12 @@ body {
   border-radius: 22px;
   padding: 2.5rem;
   width: 90%;
-  max-width: 700px;         /* ✅ allow more width for bigger images */
+  max-width: 700px;         
   position: relative;
   box-shadow: 0 16px 48px rgba(13, 42, 77, 0.18);
-  margin: auto;             /* ✅ centers the box */
-  overflow-y: auto;         /* ✅ prevents overlap if content grows */
-  max-height: 80vh;         /* ✅ keeps it inside viewport */
+  margin: auto;            
+  overflow-y: auto;         
+  max-height: 80vh;         
 }
 
 .compare-box h2 {
@@ -409,9 +409,9 @@ body {
 /* Comparison images */
 .compare-car-card img,
 .compare-images img {
-  width: 100%;                /* take full width of container */
-  max-width: 250px;           /* cap size so they don’t get too huge */
-  height: auto;               /* keep aspect ratio */
+  width: 100%;
+  max-width: 250px;           
+  height: auto;               
   object-fit: contain;
   display: block;
   margin: 0 auto;
@@ -502,9 +502,9 @@ body {
   .car.car-left { left: 10%; }
   .car.car-right { left: 90%; }
 }
-/* ✅ FIXED HEADLINER GRID */
 
-/* ✅ PERFECT GRID FIX */
+
+
 
 
 .specs-grid {
@@ -641,7 +641,7 @@ body::-webkit-scrollbar-thumb:hover {
 
   
 .spec:last-child {
-  grid-column: 2 / 3;   /* centers CO2 perfectly */
+  grid-column: 2 / 3;   
   width: 100%;
 }
 
